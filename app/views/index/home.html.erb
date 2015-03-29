@@ -1,23 +1,8 @@
 
 <!--<div style="background-color: #404040  ">-->
-<div style="background-image: url(assets/home/dark-metal-grid-5.jpg)">
+
   <img src="assets/home/bujia-1.png" style="position: absolute; top: 24%">
   <img src="assets/home/wheel-3.png" style="position: absolute; right: 1%; opacity: 0.8;">
-
-
-<div class="row">
-    <div class="large-3 columns">
-      <h1><img src="assets/home/logo.jpg"/></h1>
-    </div>
-    <div class="large-9 columns">
-      <ul class="right button-group">
-      <li><a href="#" class="button">Inicio</a></li>
-      <li><a href="#" class="button">Reparaciones</a></li>
-      <li><a href="#" class="button">El taller</a></li>
-      <li><a href="#" class="button">Conócenos</a></li>
-      </ul>
-  </div>
-  </div>
   
 <!-- End Header and Nav -->
 
@@ -37,7 +22,7 @@
     </div>
   </div>
     
-<hr/>
+<hr style="border: 1px solid #404040;"/>
 
 <!--<script>
   var slider = document.getElementById("slider");
@@ -50,21 +35,21 @@
 
   <div class="row">
     <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+      <img src="assets/home/reparaciones.JPG" style="border: 1px solid white;"/>
+      <h4 class="txt_index">Reparaciones</h4>
+      <p class="txt_index">Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
     </div>
     
     <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+      <img src="assets/home/el_taller.JPG" style="border: 1px solid white;"/>
+      <h4 class="txt_index">El taller</h4>
+      <p class="txt_index">Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
     </div>
     
     <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+      <img src="assets/home/conocenos.JPG" style="border: 1px solid white;"/>
+      <h4 class="txt_index">Conócenos</h4>
+      <p class="txt_index">Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
     </div>
   
     </div>
@@ -73,21 +58,22 @@
 <div class="row">
     <div class="large-12 columns">
     
-      <div class="panel">
-        <h4>Get in touch!</h4>
-            
+      <div class="panel panel_contacts">
+        <h4 class="contact_title">Encuéntranos y contacta !!!</h4>           
         <div class="row">
-          <div class="large-9 columns">
-            <p>We'd love to hear from you, you attractive person you.</p>
-          </div>
-          <div class="large-3 columns">
-            <a href="#" class="radius button right">Contact Us</a>
-          </div>
+            <div class="large-9 columns">
+              <a href="#" onclick="showMap()"><img src="assets/home/contacta.png" class="img_contacta">
         </div>
-      </div>
-      
+      </div> 
     </div>
-  </div>
+</div>
+
+<section id="wrapper" class="wrapper">                                
+  <article class="article_map">
+    <a href="#" onclick="closeMap()" class="link_close_map">Cerrar</a>
+
+  </article>
+</section>  
 
   <!-- Footer -->
   
@@ -115,10 +101,10 @@
     var sliderImg = slider.childNodes[1].childNodes[1];
     sliderImg.setAttribute("style", "box-shadow: 1px 1px 5px white");
   </script>-->
-<script>
-  document.write('<script src=js/vendor/' +
-  ('__proto__' in {} ? 'zepto' : 'jquery') +
-  '.js><\/script>')
+  <script>
+    document.write('<script src=js/vendor/' +
+    ('__proto__' in {} ? 'zepto' : 'jquery') +
+    '.js><\/script>')
   </script>
   <script src="../../assets/js/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
@@ -126,13 +112,51 @@
     $(document).foundation();
   </script>
 
-    <script src="../assets/js/templates/jquery.js"></script>
-    <script src="../assets/js/templates/foundation.js"></script>
-    <script>
-      $(document).foundation();
+  <script src="../assets/js/templates/jquery.js"></script>
+  <script src="../assets/js/templates/foundation.js"></script>
+  <script>
+    $(document).foundation();
 
-      var doc = document.documentElement;
-      doc.setAttribute('data-useragent', navigator.userAgent);
-    </script>
+    var doc = document.documentElement;
+    doc.setAttribute('data-useragent', navigator.userAgent);
+  </script>
 
-</div>
+  <script>
+    function success(position) {
+      var mapcanvas = document.createElement('div');
+      mapcanvas.id = 'mapcontainer';
+      mapcanvas.style.height = '400px';
+      mapcanvas.style.width = '600px';
+
+      document.querySelector('article').appendChild(mapcanvas);
+
+      //var coords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+      var coords = new google.maps.LatLng(40.4340254,-3.668029,21);
+  
+  
+      var options = {
+        zoom: 18,
+        center: coords,
+        mapTypeControl: false,
+        navigationControlOptions: {
+          style: google.maps.NavigationControlStyle.SMALL
+        },
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(document.getElementById("mapcontainer"), options);
+
+      var marker = new google.maps.Marker({
+          position: coords,
+          map: map,
+          title:"c/ Amorós 2, 28028, Madrid"
+      });
+    }
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(success);
+    } else {
+      error('Geo Location is not supported');
+    }
+
+  </script>
+

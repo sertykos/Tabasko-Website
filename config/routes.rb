@@ -2,6 +2,10 @@ Rails.application.routes.draw do
 
   root 'index#home'
 
+  get 'reparaciones' => 'subpage#reparaciones'
+  get 'elTaller' => 'subpage#elTaller'
+  get 'conocenos' => 'subpage#conocenos'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

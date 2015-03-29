@@ -1,2 +1,17 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+
+
+function showMap ()	{
+
+	var map = document.getElementById('wrapper');
+
+	map.style.display = "block";
+
+}
+
+function closeMap ()	{
+
+	var map = document.getElementById('wrapper');
+
+	map.style.display = "none"; 
+
+}

@@ -2,3 +2,77 @@
 .bullets	{
 	cursor: pointer;
 }
+
+.nav_link	{
+	background-color: rgba(255, 255, 255, 0.5);
+	border: white;
+}
+
+.nav_link:hover	{
+	background-color: rgba(255,255,255,1);
+	color: gray;
+}
+
+.txt_index	{
+	color: darkgray;
+}
+
+.contact_title	{
+	color: papayawhip !important;
+	font-family: monospace;
+	margin-left: 1%;
+}
+
+.img_contacta	{
+	height: 90px;
+	width: 420px;
+}
+
+.wrapper	{
+	display: none;
+	width: 40%;
+	height: 440px;
+	position: fixed;
+	bottom: 30%;
+	left: 30%;
+	background-color: whitesmoke;
+	box-shadow: 1px 1px 30px black
+}
+
+.article_map	{
+	width: 91%;
+	margin: auto;
+	margin-top: 20px;
+	position: relative;
+}
+
+.btn_map 	{
+	position: relative;
+	right: 10%;
+	bottom: 30px;
+	width: 210px;
+	background: steelblue;
+	border: 0px;
+	border-radius: 30px;
+	box-shadow: 1px 1px 4px #282828;
+}
+
+.link_close_map	{
+	position: absolute;
+	z-index: 1;
+	right: 10px;
+	top: 5px;
+	font-size: 18px;
+}
+
+.btn_close_map:hover	{
+	background-color: white;
+	color: black;
+}
+
+.panel_contacts	{
+	height: 160px;
+	background-color: rgba(192,192,192,0.5);
+	border: 0px;
+	box-shadow: inset 1px 1px 30px black;
+}
